@@ -27,6 +27,7 @@ namespace EvidentaStudenti2
 
         public void SetNote(string sirNote)
         {
+            noteNoi();
             // initializare vector cu note 
             if (!sirNote.Equals(""))
             {
@@ -82,6 +83,11 @@ namespace EvidentaStudenti2
             string s = string.Format("Studentul {0} are notele:.... \n{1}", nume, sNote);
 
             return s;
+        }
+
+        private void noteNoi()
+        {
+            note = new int[4, 15];
         }
         /*
         public void NumarareNote(out int valSub5,out int valPeste5)
