@@ -14,8 +14,7 @@ namespace Laborator3
             int[] dimensiuni = new int[26];
             for(int i = 0; i < 26; i++)
             {
-                tablou[i] = new string[10];
-                
+                tablou[i] = new string[10];   
             }
             foreach(var cuvant in args)
             {
